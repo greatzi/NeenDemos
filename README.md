@@ -1,2 +1,0 @@
-# NeenDemos
-Android Simple Demos

@@ -1,4 +1,4 @@
-package org.neen.lab;
+package org.neen.demo;
 
 import org.junit.Test;
 

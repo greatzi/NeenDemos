@@ -1,4 +1,4 @@
-package org.neen.lab;
+package org.neen.demo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("org.neen.lab", appContext.getPackageName());
+        assertEquals("org.neen.demo", appContext.getPackageName());
     }
 }
