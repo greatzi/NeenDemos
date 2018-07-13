@@ -19,11 +19,62 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
-            android:name="org.neen.demo.settings.SettingsActivity"
+            android:name=".settings.SettingsActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".router.FirstActivity">
+        </activity>
+        <activity android:name=".router.SecondActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="org.neen.demo.router.secondactivity"
+                    android:scheme="router"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".router.ThirdActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="org.neen.demo.router"
+                    android:path="/activity/third"
+                    android:port="8080"
+                    android:scheme="router"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".router.ForthActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="org.neen.demo.router.forthactivity"
+                    android:scheme="router"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".router.FifthActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="org.neen.demo.router.fifthactivity"
+                    android:scheme="router"/>
+            </intent-filter>
         </activity>
     </application>
 

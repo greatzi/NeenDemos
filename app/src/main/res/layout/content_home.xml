@@ -9,10 +9,12 @@
     tools:context="org.neen.demo.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
-    <TextView
+    <Button
+        android:id="@+id/forward_router"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:onClick="forwardToRouter"
+        android:text="路由测试"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

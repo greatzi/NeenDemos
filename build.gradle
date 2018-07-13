@@ -28,6 +28,10 @@ allprojects {
         targetSdkVersion = 25
         supportLibraryVersion = '27.0.2'
     }
+
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
+    }
 }
 
 task clean(type: Delete) {
